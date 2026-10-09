@@ -13,6 +13,7 @@ This repository contains my C++ practice exercises
 - mang1.cpp: Count the number of monsters that are still alive
 - huongdoituong1.cpp: Create a player and handle damage
 - huongdoituong2.cpp: Create a player and implement healing
+- huongdoituong3.cpp: Create multiple characters
 
 # Goal
 
