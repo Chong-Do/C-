@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 class Player
@@ -7,7 +6,6 @@ class Player
     public string name;
     public int hp;
     public int damage;
-
     public Player(string playerName, int playerHP, int playerDamage)
     {
         name = playerName;
@@ -21,7 +19,6 @@ class Monster
     public string name;
     public int hp;
     public int damage;
-
     public Monster(string monsterName, int monsterHP, int monsterDamage)
     {
         name = monsterName;
