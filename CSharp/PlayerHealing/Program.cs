@@ -5,23 +5,20 @@ class Monster
     public string name;
     public int hp;
     public int damage;
-
     public Monster(string monsterName, int monsterHP, int monsterDamage)
     {
         name = monsterName;
         hp = monsterHP;
         damage = monsterDamage;
     }
-
+    
     public int TakeDamage(int damage)
     {
         hp = hp - damage;
-
         if (hp < 0)
         {
             hp = 0;
         }
-
         return hp;
     }
 }
@@ -32,7 +29,6 @@ class Player
     public int hp;
     public int maxHP;
     public int damage;
-
     public Player(string playerName, int playerHP, int playerDamage)
     {
         name = playerName;
@@ -40,16 +36,14 @@ class Player
         maxHP = playerHP;
         damage = playerDamage;
     }
-
+    
     public int TakeDamage(int damage)
     {
         hp = hp - damage;
-
         if (hp < 0)
         {
             hp = 0;
         }
-
         return hp;
     }
 
@@ -61,7 +55,6 @@ class Player
         {
             hp = maxHP;
         }
-
         return hp;
     }
 }
@@ -82,19 +75,14 @@ class Program
 
         Console.WriteLine("\n- CHIẾN ĐẤU");
         Console.WriteLine(monster.name + " tấn công " + player.name);
-
         int playerHP = player.TakeDamage(monster.damage);
-
         Console.WriteLine("HP Knight còn lại: " + playerHP);
-
         int healAmount = 30;
-
         Console.WriteLine("\n- SAU KHI HỒI MÁU");
         Console.WriteLine("Hồi máu cho " + player.name + ": "
             + healAmount + " HP");
 
         playerHP = player.Heal(healAmount);
-
         Console.WriteLine("HP Knight sau khi hồi: " + playerHP);
     }
 }
